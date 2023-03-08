@@ -1,7 +1,9 @@
+<!-- (keyup.enter)="onValue()" -->
 <input 
 type="text" 
 [placeholder]="placeholder"
 class="form-control"
+[value]="initialValue"
+(keyup)="onKeyPress()"
 #searchbox
-(keyup.enter)="onValue()"
 >
